@@ -2,7 +2,7 @@ $(document).ready(function () {
     var url = window.location.pathname;
     var filename = url.substring(url.lastIndexOf('/') + 1);
     if (filename == "") {
-        filename = "index.php"
+        filename = "index.html"
     }
     $("header .nav-item .nav-link").removeClass("active");
     $(`header .nav-item .nav-link[href="${filename}"]`).addClass("active")
@@ -152,6 +152,7 @@ $(".range-double").slider({
     values: [30,70],
     slide: function(event,ui){
       $(this).prev().val(ui.values[0]+"-"+ui.values[1]);
+      $(this).parents(".input-field").find(".value").html(ui.values[0]+" - " + ui.values[1])
     }
 });
 $(".range-single").slider({
@@ -161,6 +162,7 @@ $(".range-single").slider({
     value: 50,
     slide: function(event,ui){
       $(this).prev().val(ui.value);
+      $(this).parents(".input-field").find(".value").html(ui.value)
     }
 });
 

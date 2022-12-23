@@ -569,7 +569,7 @@ main{
   position: relative;
   border-radius: 30px;
 }
-.progress .progress-bar::before{
+.progress .progress-bar.loading::before{
   content: '';
   position: absolute;
   height: 100%;
@@ -750,12 +750,17 @@ main{
 }
 .form-content h6,
 .form-content label{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 12px;
   font-weight: 400;
   margin-bottom: 5px;
   line-height: 18px;
   color: rgba(255,255,255,0.5);
+}
+.form-content label .value{
+  color: #fff;
 }
 .form-content h6{
   margin-bottom: 25px;
@@ -1064,7 +1069,7 @@ main{
 .input-field .img-upload-wrapper img{
   display: block;
   border-radius: 15px;
-  margin: 15px 0;
+  margin: 15px auto;
   max-height: 250px;
 }
 .input-field .img-upload-wrapper .avatar-img{
@@ -1090,6 +1095,41 @@ main{
 .input-field .img-upload-btn:active{
   transform: translateY(0);
   box-shadow: none;
+}
+/* modal css */
+.modal-content{
+  background-color: var(--card-bg);
+}
+.modal-dialog{
+  max-width: 500px;
+}
+.modal-content .modal-body{
+  padding: 0;
+}
+.modal-content .modal-header,
+.modal-content .modal-footer{
+  border-color: rgba(255,255,255,0.1);
+}
+.modal-content .modal-footer .btn{
+  display: block;
+  border-radius: 30px;
+  font-size: 12px;
+  width: fit-content;
+  padding: 10px 25px;
+  transition: 0.3s;
+}
+.modal-content .modal-footer .btn-cancel{
+  background-color: var(--bg-theme);
+  color: rgba(255,255,255,0.5);
+}
+.modal-content .modal-footer .btn-process{
+  background: var(--gradient-color);
+  color: #fff;
+}
+.modal-content .modal-header .modal-title{
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 /************************** media-query **************************/
 

@@ -32,7 +32,7 @@
             <div class="header-content">
                 <div class="header-left">
                     <a class="nav-toggler collapsed" href="javascript:;"><i class="fa-regular fa-sliders"></i></a>
-                    <h4><?php echo $_COOKIE['pageName'] ?></h4>
+                    <h4>Dashboard</h4>
                 </div>
                 <div class="header-right">
                     <ul class="header-right-ul">
@@ -86,25 +86,25 @@
     <div class="container-fluid">
         <div class="main-container">
             <nav class="side-nav mini-sidebar">
-                <a class="brand-name" href="index.php">
+                <a class="brand-name" href="index.html">
                     <span class="short-content">OST</span>
                     <span class="full-content">One Source Tech</span>
                 </a>
                 <ul>
                     <li>
-                        <a href="index.php">
+                        <a href="index.html">
                             <span class="short-content"><i class="fa-solid fa-chart-pie"></i></span>
                             <span class="full-content">Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="timeline.php">
+                        <a href="timeline.html">
                             <span class="short-content"><i class="fa-solid fa-list-timeline"></i></span>
                             <span class="full-content">Timeline</span>
                         </a>
                     </li>
                     <li>
-                        <a href="forms.php">
+                        <a href="forms.html">
                             <span class="short-content"><i class="fa-regular fa-memo-pad"></i></span>
                             <span class="full-content">Forms</span>
                         </a>
