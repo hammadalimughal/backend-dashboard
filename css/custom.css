@@ -108,6 +108,16 @@ select {
   outline: none;
   box-shadow: none;
 }
+/* login screen */
+.login-sec{
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-sec{
+  padding-bottom: 30px;
+}
 /*  */
 header .header-content{
   display: flex;
