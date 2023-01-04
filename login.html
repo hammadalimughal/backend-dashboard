@@ -70,7 +70,9 @@
                                     <h6>* Required Fields</h6>
                                     <div class="form-footer">
                                         <button type="submit">Log In</button>
-                                        <a href="javascript:;">Forgot Password?</a>
+                                        <button class="forgot-pswrd" href="javascript:;" role="button"
+                                            data-bs-toggle="modal" data-bs-target="#forgotpassword">Forgot
+                                            Password?</button>
                                     </div>
                                 </div>
                             </form>
@@ -80,6 +82,23 @@
             </div>
         </section>
     </main>
+    <div class="forgot-password modal fade" id="forgotpassword" tabindex="-1" aria-labelledby="forgotpasswordLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content form-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="forgot-content">
+                    <img src="images/forgot-icon.png" alt="">
+                    <h4>Forgot Your Password?</h4>
+                    <h6>Enter your email address to Retrieve your password</h6>
+                    <div class="input-field">
+                        <input class="custom-input" type="email" placeholder="email">
+                    </div>
+                    <button type="submit" class="btn btn-reset-password">Reset Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.min.js"></script>

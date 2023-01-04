@@ -892,9 +892,13 @@ main{
   transform: translateY(0);
   box-shadow: 0 0 5px rgba(255,255,255,0);
 }
+.form-content .form-footer .forgot-pswrd,
 .form-content .form-footer a{
   color: #e14eca;
   font-size: 14px;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 .form-content .pswrd-cont{
   position: relative;
@@ -1140,6 +1144,52 @@ main{
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 1px;
+}
+/* forgot password modal */
+.forgot-password .modal-content{
+  position: relative;
+}
+.forgot-password .modal-content .btn-close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.forgot-password .modal-content .forgot-content img{
+  display: block;
+  width: 150px;
+  margin: 0 auto 40px;
+}
+.forgot-password .modal-content .forgot-content h4{
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.forgot-password .modal-content .forgot-content h6{
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.forgot-password .modal-content .forgot-content .input-field{
+  margin-bottom: 20px;
+}
+.forgot-password .modal-content .forgot-content button{
+  background: var(--gradient-color);
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  transition: 0.3s;
+  box-shadow: 0 0 5px rgb(255 255 255 / 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
 }
 /************************** media-query **************************/
 
